@@ -37,7 +37,7 @@ jobs:
           git submodule update --init --recursive
           make
           make iphoneos
-          ldid -S ipwnder_ios
+          ldid -Sentitlements.plist ipwnder_ios
           ls
           
           
