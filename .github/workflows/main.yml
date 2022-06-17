@@ -29,6 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
+          whoami
           sudo curl -LJ https://github.com/ProcursusTeam/ldid/releases/download/v2.1.5-procursus2/ldid_macos_x86_64 -O /usr/local/bin/ldid
           sudo chmod +x /usr/local/bin/ldid
           sudo ln -s /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/{Headers,Modules} /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework/Versions/A
