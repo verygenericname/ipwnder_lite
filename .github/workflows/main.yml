@@ -29,7 +29,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           ls
-          cd ipwnder_lite
           make
           ls
           
