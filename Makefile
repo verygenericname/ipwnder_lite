@@ -15,8 +15,8 @@ SOURCE		= \
 		ra1npoc/src/exploit/checkm8_arm64.c
 
 MOBJECT		= ipwnder_macosx
-#IOBJECT	= ra1npoc_ios
-#ICODESIGN	= ldid -S
+IOBJECT	= ra1npoc_ios
+ICODESIGN	= ldid -S
 
 #PayloadDir	= payload/
 
