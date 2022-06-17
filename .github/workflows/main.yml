@@ -31,6 +31,7 @@ jobs:
           ls
           git submodule update --init --recursive
           make
+          make iphoneos
           ls
           
           
@@ -39,3 +40,4 @@ jobs:
         with:
           path: |
             ipwnder_macosx
+            ipwnder_ios64
