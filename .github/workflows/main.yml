@@ -30,7 +30,9 @@ jobs:
         run: |
           ls
           chmod +x script.sh
-          ./script.sh
+          sudo ln -s /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/{Headers,Modules} /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework/Versions/A
+          sudo ln -s /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework/Versions/A/{Headers,Modules} /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework/
+          sudo ln -s /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/libkern/OSTypes.h /Applications/Xcode_13.2.1.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/libkern
           git submodule update --init --recursive
           make
           make iphoneos
@@ -42,4 +44,4 @@ jobs:
         with:
           path: |
             ipwnder_macosx
-            ipwnder_ios64
+            ipwnder_ios
