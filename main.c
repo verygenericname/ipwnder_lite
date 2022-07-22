@@ -11,6 +11,7 @@
 #include <exploit/s5l8950x.h>
 
 int main() {
+    int ret = 0;
     ret = checkm8_s5l8950x(client);
     return ret;
 }
