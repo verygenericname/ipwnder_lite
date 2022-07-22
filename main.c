@@ -168,8 +168,6 @@ int main(int argc, char** argv)
             return -1;
         }
         // limera1n devices
-        ret = limera1n(client);
-    } else (flags & CHECKM8_A6) {
         ret = checkm8_s5l8950x(client);
     }
     
