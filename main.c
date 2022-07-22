@@ -169,10 +169,8 @@ int main(int argc, char** argv)
         }
         // limera1n devices
         ret = limera1n(client);
-    } else if(flags & CHECKM8_A6) {
+    } else (flags & CHECKM8_A6) {
         ret = checkm8_s5l8950x(client);
-    } else {
-        ret = checkm8_arm64(client, payload, flags);
     }
     
     
