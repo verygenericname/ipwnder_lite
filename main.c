@@ -10,6 +10,10 @@
 #include <exploit/checkm8_arm64.h>
 #include <exploit/s5l8950x.h>
 
+io_client_t client;
+checkra1n_payload_t payload;
+extern bool debug_enabled;
+
 int main() {
     int ret = 0;
     ret = checkm8_s5l8950x(client);
